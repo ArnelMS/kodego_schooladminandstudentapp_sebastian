@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="447dp"
+        android:layout_height="831dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29"
+        app:srcCompat="@drawable/bg_mainactivity" />
+
+    <EditText
+        android:id="@+id/etxtUsername"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColorHint="#5A5A5A"
+        app:layout_constraintBottom_toTopOf="@+id/etxtPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.909" />
+
+    <EditText
+        android:id="@+id/etxtPassword"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="52dp"
+        android:text="LOGIN"
+        app:layout_constraintBottom_toTopOf="@+id/txtvOr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtPassword"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtvCreateNewAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        android:text="Create New Account:"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtPassword"
+        app:layout_constraintVertical_bias="0.857" />
+
+    <TextView
+        android:id="@+id/txtvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Forgot Password?"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintEnd_toStartOf="@+id/txtvCreateNewAccount"
+        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtPassword"
+        app:layout_constraintVertical_bias="0.857" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in to your account:"
+        app:layout_constraintBottom_toTopOf="@+id/etxtUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.876"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtvLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="________________________________________________"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/imgbtnGoogle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvOr" />
+
+    <TextView
+        android:id="@+id/txtvOr"
+        android:layout_width="41dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="132dp"
+        android:text="OR"
+        android:textAlignment="center"
+        android:textColor="#F6F4F4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtPassword" />
+
+    <ImageView
+        android:id="@+id/imgbtnGoogle"
+        android:layout_width="350dp"
+        android:layout_height="81dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgbtnFacebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvOr"
+        app:layout_constraintVertical_bias="0.938"
+        app:srcCompat="@drawable/google_login_img" />
+
+    <ImageButton
+        android:id="@+id/imgbtnFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginBottom="104dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/facebook_login_img"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

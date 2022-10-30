@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeTwoActivity">
+
+    <ImageView
+        android:id="@+id/imgstudent"
+        android:layout_width="228dp"
+        android:layout_height="209dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imgbgactvityhometwo"
+        android:layout_width="418dp"
+        android:layout_height="769dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_homeactivity" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="411dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabhome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/homeicon"
+            android:text="HOME" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabannouncement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/announce"
+            android:text="Announcments" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabassignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/assignment"
+            android:text="Assignments" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabnotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/notepencilicon4"
+            android:text="notes"
+            tools:layout_editor_absoluteX="464dp"
+            tools:layout_editor_absoluteY="1116dp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabsyllabus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/img_syllabus"
+            android:text="Syllabus" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <TextView
+        android:id="@+id/txtvStudentNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student#: 20220001"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/txtvStudentName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgbgactvityhometwo"
+        app:layout_constraintVertical_bias="0.124" />
+
+    <TextView
+        android:id="@+id/txtvStudentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="276dp"
+        android:text="Juan Dela Cruz"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgbgactvityhometwo" />
+
+    <TextView
+        android:id="@+id/txtvStudentSectionandBatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="MD1P - Batch 01"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvStudentName" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerSubjects"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:paddingStart="25dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="319dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

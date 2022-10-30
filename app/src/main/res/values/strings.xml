@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SchoolAdminAndStudentApp</string>
+    <item name="search_edit_frame" type="id" />
+</resources>

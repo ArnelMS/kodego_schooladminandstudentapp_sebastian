@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/bg_homeactivity" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabItemOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/AnnouncmentIcon"
+            android:text="Announcement"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="633dp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabItemTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/AssignmentIcon"
+            android:text="Assignments"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="459dp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabItemThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/Notes"
+            android:text="Notes"
+            tools:layout_editor_absoluteX="218dp"
+            tools:layout_editor_absoluteY="669dp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabItemFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/Syllabus"
+            android:text="Syllabus"
+            tools:layout_editor_absoluteX="319dp"
+            tools:layout_editor_absoluteY="473dp" />
+    </com.google.android.material.tabs.TabLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
