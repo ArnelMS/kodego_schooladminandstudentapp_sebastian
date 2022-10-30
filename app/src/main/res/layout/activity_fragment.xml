@@ -43,6 +43,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <FrameLayout
+        android:id="@+id/fragmentMain"
         android:layout_width="805dp"
         android:layout_height="1091dp"
         app:layout_constraintBottom_toBottomOf="parent"
